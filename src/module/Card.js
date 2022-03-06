@@ -1,15 +1,17 @@
 import React from "react"
+import "../css/Card.css";
 
 function Card({employer}) {
     return (
         <div className="Card">
-            <div className="Card__types">
+            <div className="Card__types">Type
             </div>
-            <div className="Card__info">
-                <p>id: {employer.id}</p>
-                <p>name: {employer.name}</p>
-                <p>age: {employer.age}</p>
+            <div className="Card__info"> Info
+                <div>id: {employer.id}</div>
+                <div>name: {employer.name}</div>
+                <div>age: {employer.age}</div>
             </div>
+            <button>Edit</button>
         </div>
     );
 }

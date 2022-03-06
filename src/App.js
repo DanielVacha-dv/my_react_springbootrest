@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-import "./App.css";
+import "./css/App.css";
 import {getAllEmployeer} from "./module/Employeer";
 import Card from "./module/Card";
 
@@ -36,12 +36,12 @@ function App() {
 
     return (
         <div className="App">
-            <header className="App-header"></header>
+            {/*<header className="App-header"></header>*/}
 
             {loading ? (
                 <h1>Stránka se načítá</h1>
             ) : (
-                <div>
+                <div className="mainFlexContainer">
                     {employerData.map((employer, i) => {
                         console.log("employer" + employer);
                         console.log("employer name:" + employer.name);
